@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #191816;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    
+    
+}
+
+.formcontainer {
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.logobox {
+    flex-grow: 1;
+    width: 400px;
+    height: 150px;
+    margin-left: 28px;
+}
+
+.logobox img{
+    top: 0px;
+    right: 0px;
+    margin:8px;       
+}
+
+/*Título e subtítulo*/
+h1, h3 {
+    color: #d4ccb6;
+    font-family:'Poppins', sans-serif;
+    margin-left: 12px;
+}
+
+.login-form {
+    flex-grow: 2;
+    width: 500px;
+    height: 500px;  
+    
+    padding: 15px ;
+    margin: 32px 72px;
+    padding: 52px 72px;;
+ 
+
+    background-color:#24221f;
+}
+/*Subtítilo*/
+h3 {
+    margin-left: 28px 24px 28px 12px;
+    color: #afb6c2;
+    font-size: 18px;
+}
+/* textos dos formulários*/
+.label-input {
+    color: #afb6c2;
+    font-family:'Poppins', sans-serif;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 14px;
+}
+
+.labelcheck{
+
+    color: #afb6c2;
+    font-family:'Poppins', sans-serif;
+}
+
+/*formulário*/
+
+
+.boxinline {
+    display: inline-block
+}
+/*inputs do email e password*/
+
+
+.input-email{
+     
+    height: 42px;
+
+    font-family:'Poppins', sans-serif;
+    margin: 8px 14px 0px 14px;
+    color:   #afb6c2;
+    border: 2px solid gray;
+    border-radius: 4px;
+     
+    
+    background: url(images/mail.svg) left 12px top 10px no-repeat;
+    padding-left: 42px;
+    padding-top: 4px;
+}
+
+.input-password {
+
+    height: 42px;
+    color: #afb6c2;
+    font-family:'Poppins', sans-serif;
+
+
+    margin: 8px 14px 0px 14px;
+    font-family:'Poppins', sans-serif;
+    border: 2px solid gray;
+    border-radius: 4px;
+    
+    background: url(images/lock.svg)   left 12px top 10px no-repeat, url(images/eye.svg ) right 12px top 10px no-repeat;
+    padding-left: 42px;
+    padding-top: 4px;
+}
+
+
+
+
+/* Focus do email e password */
+
+.input-email:focus-within, .input-email:active {
+    margin: 8px 14px 0px 10px;
+    border: 3px solid #ffc632;
+    background: url(images/mail-focus.svg) left 12px top 10px no-repeat;
+    padding-left: 42px;
+    padding-top: 4px;
+}
+
+.input-password:focus-within, .input-password:active {
+    margin: 8px 14px 0px 10px;
+    border: 3px solid #ffc632;
+    background: url(images/lock-focus.svg) left 12px top 10px no-repeat, url(images/eye.svg) right 12px top 10px  no-repeat;
+    padding-left: 42px;
+    padding-top: 4px;
+}
+
+/*Textos e links*/
+
+strong, p, a {
+    color:  #ffc632;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*links sem linha*/
+
+a {
+   text-decoration: none;
+}
+
+strong {
+    display: block;
+}
+
+p {
+   display: block;
+   margin-left: 32px;   
+
+}
+
+.phrase {
+    margin-left: 0px;
+}
+
+
+.rememberme {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #afb6c2;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+
+#forgotp {
+     margin-left: 5px;
+}
+
+
+.formfooter {
+    width: 500px;
+    height: 150px;
+}
+
+.trucker img{
+    flex-grow: 1px;
+}
+
+
+
+
+button {
+    border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    padding: 12px 125px 12px 125px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffc632
+}
+
+
+p {
+    -webkit-appearance: none;
+    margin-left: 32px;
+}
+
+/*
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+*/
